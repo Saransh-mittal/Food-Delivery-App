@@ -19,7 +19,7 @@ const signup = () => {
 
     try {
       //console.log(data);
-      const response = await fetch("http://localhost:3000/api/createuser", {
+      const response = await fetch("/api/createuser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

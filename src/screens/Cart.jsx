@@ -12,7 +12,7 @@ const Cart = () => {
     const handleCheckout = async() => {
       try {
         //console.log(data);
-        const response = await fetch("http://localhost:3000/api/orderdata", {
+        const response = await fetch("/api/orderdata", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
