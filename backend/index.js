@@ -17,11 +17,11 @@ app.use((req,res,next)=>{
 app.use(express.json());
 const PORT = process.env.PORT || 3000;
 app.use("/api",require("./router/auth"));
-app.use(express.static('./client/dist'));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "client", "dist",     
-  "index.html"));
-});
+// app.use(express.static('./client/dist'));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "client", "dist",     
+//   "index.html"));
+// });
 
 app.listen(PORT, () => {
   console.log(`Listening to port no. ${PORT}`);
